@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="/img/logo7.png" alt="logo">
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav_link">Trang chủ</a></li>
+            <li class="nav-item"><a href="#" class="nav_link">Giới thiệu</a></li>
+            <li class="nav-item"><a href="#" class="nav_link">Dịch vụ</a></li>
+
+
+            <!-- Button trigger modal -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Thông tin kiện hàng hóa gửi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <label class="col-4 " class="col-4 " for="">Số serial:</label>
+                                    <div class="ThongTin col-8">
+                                        <input type="text" name="" id="Seri">
+                                        <small id="helpIdSeri"></small>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <label class="col-4 " for="">Mô tả kiện hàng:</label>
+                                    <div class="ThongTin col-8">
+                                        <input id="kienhang" type="text" name="">
+                                        <small class="helpIdkienhang" class="text-muted"></small>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <label class="col-4 " for="">Hình ảnh:</label>
+                                    <div class="ThongTin col-8">
+                                        <input type="file" name="" id="hinhanh">
+                                        <small id="helpId" class="text-muted"></small>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <label class="col-4 " for="">Trọng lượng (kg):</label>
+                                    <div class="ThongTin col-8">
+                                        <input id="trongluong" type="number" name="">
+                                        <small class="helpIdtrongluong" class="text-muted"></small>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <label class="col-4 " for="">Chi phí vận chuyển(VND):</label>
+                                    <div class="ThongTin col-8">
+                                        <input type="number" name="" id="chiPhi" disabled>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <button type="button" id="xacnhan" class="btn btn-primary">Xác
+                                        nhận</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <li class="nav-item"><a href="#" class="nav_link" data-toggle="modal" data-target="#modelId">Ký gửi hàng
+                    hóa</a></li>
+            <li class="nav-item"><a href="#" class="nav_link">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main_top">
+            <div class="main_top-left">Form</div>
+            <div class="main_top-right">
+                <b class="tieude">Qui định thanh toán</b>
+                <ul>
+                    <li class="dieukien"> Khách cọc từ 70% - 100% số tiền của đơn hàng.</li>
+                    <li class="dieukien">Hàng về sau 24-48 tiếng kể từ khi kho Trung Quốc ký nhận.</li>
+                    <li class="dieukien">Shop sẽ thanh lý đơn hàng nếu sau 1 tuần khách hàng không thanh toán tiền nhận
+                        hàng.</li>
+                </ul>
+            </div>
+        </div>
+        <h3>Danh sách kiện hàng hóa gửi</h3>
+        <div class="main_footer">
+            <table class="table table-bordered table-striped" id="myTable">
+
+                <tr>
+                    <th>STT</th>
+                    <th>Số serial</th>
+                    <th>Mô tả kiện hàng</th>
+                    <th>Hình ảnh</th>
+                    <th>Trọng lượng (kg)</th>
+                    <th>Phí vận chuyển (VND)</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>OZMO-600</td>
+                    <td>Robot Hút Bụi Lau Nhà Dreame D9 Pro</td>
+                    <td>..\image\Pro9.PNG </td>
+                    <td>3.5</td>
+                    <td>122500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>SMS25EI00G</td>
+                    <td>Máy rửa chén độc lập Bosch TGB - Serie 2</td>
+                    <td>..\image\Bosch TGB.SMS25EI00G.PNG</td>
+                    <td>48.25</td>
+                    <td>1447500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Thùng Cherry ..\image\cherry.PNG</td>
+                    <td>55</td>
+                    <td>825000</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script src="/js/index.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script>
+
+    update();
+
+    $("#trongluong").on("input", function () {
+        var gia = 0;
+        if ($("#trongluong").val() > 0 && $("#trongluong").val() <= 20) {
+            gia = 35000;
+        } else if ($("#trongluong").val() > 20 && $("#trongluong").val() <= 50) {
+            gia = 30000;
+        } else if ($("#trongluong").val() > 50) {
+            gia = 15000;
+        }
+        var chiphi = $("#trongluong").val() * gia;
+        $("#chiPhi").val(chiphi);
+    });
+    function xacnkhan() {
+
+        let kiemTraGiaTri = true;
+        var exp = /^[A-Z0-9_]{6,}$/;
+        if ($("#Seri").val().length == 0 || !exp.test($("#Seri").val())) {
+            $("#helpIdSeri").html("số serial in trên kiện hàng nếu có! ( in hoa và lớn hơn 6 kí tự)").css("color", "red");
+            kiemTraGiaTri = false;
+        } else {
+            $("#helpIdSeri").html("");
+        }
+        if ($("#kienhang").val().length == 0) {
+            $(".helpIdkienhang").html("*").css("color", "red");
+            kiemTraGiaTri = false;
+        } else {
+            $(".helpIdkienhang").html("")
+        }
+        if ($("#trongluong").val().length == 0 || $("#trongluong").val() < 0) {
+            $(".helpIdtrongluong").html("* ( Trọng lượng lớn hơn 0)").css("color", "red");
+            kiemTraGiaTri = false;
+        } else {
+            $(".helpIdtrongluong").html("")
+        }
+        return kiemTraGiaTri;
+
+    }
+    $("#xacnhan").on("click", function () {
+        if (xacnkhan() == true) {
+            $("#xacnhan").attr("data-dismiss", "modal")
+            addRow();
+
+        }
+        update();
+    })
+
+    function addRow() {
+        var table = document.getElementById("myTable");
+        // tạo 1 hàng ở phía dưới cùng của bảng
+        var row = table.insertRow(-1);
+        // tạo các ô
+        var col0 = row.insertCell(0);
+        var col1 = row.insertCell(1);
+        var col2 = row.insertCell(2);
+        var col3 = row.insertCell(3);
+        var col4 = row.insertCell(4);
+        var col5 = row.insertCell(5);
+        // nội dung các ô đó
+        col0.innerHTML = table.rows.length - 1;
+        col1.innerHTML = document.querySelector("#Seri").value;
+        col2.innerHTML = document.querySelector("#kienhang").value;
+        col3.innerHTML = document.querySelector("#hinhanh").value;
+        col4.innerHTML = document.querySelector("#trongluong").value;
+        col5.innerHTML = document.querySelector("#chiPhi").value;
+
+
+    }
+
+    function update() {
+        let table = document.querySelector("#myTable")
+        for (let i = 1; i < table.rows.length; i++) {
+            let cell = table.rows[i].cells[0];
+            cell.innerHTML = i;
+        }
+    }
+</script>
+
+
+</html>

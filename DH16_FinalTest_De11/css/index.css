@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+nav{display: flex; background-color: #ffc107;align-items: center;padding:10px; width: 100%;}
+nav ul li {margin:10px;}
+nav ul li a:hover{ text-decoration: none;}
+
+
+main{width: 100%; padding-left:10px;}
+main .main_top{display: flex; border-bottom:  2px solid #e7eaed ;}
+main .main_top-left{width: 70%;}
+main .main_top-right{width: 30%; background-color:#f8f9fa; border-left: 2px solid #e7eaed;} 
+
+main .main_top-right ul{padding-left:50px; padding-right: 10px;}
+main .main_top-right .tieude{font-weight: 700; font-size: larger; list-style: none;}
+
+main h3{color:#0d81ff;}
+
+nav .row{margin:20px 0;}
+nav .row button{ background-color: white; color: #0d81ff;}
+nav .ThongTin{display: flex; flex-direction: column;}
